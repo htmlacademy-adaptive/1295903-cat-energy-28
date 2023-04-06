@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Подбор программы | HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
 <header class="header">
-  <a class="header__logo" href="/">
-    <img class="header__logo-image" src="" width="" height="">
-    <img class="header__logo-slogan logo" src="" width="" height="">
-    <span></span>
+  <a class="header__logo logo" href="index.html">
+    <img class="logo__image" src="img/logo-mobile.svg" width="" height="" alt="Кэт энерджи">
+    <img class="logo__slogan " src="img/logo.svg" width="101" height="" alt="18">
   </a>
   <nav class="nav">
     <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="nav__list menu">
       <li class="menu__item">
-        <a>
+        <a href="index.html">
           Главная
         </a>
       </li>
-      <li class="menu__item menu__item--active">
-        <a>
+      <li class="menu__item">
+        <a href="catalog.html">
           каталог продукции
         </a>
       </li>
-      <li class="menu__item">
-        <a>
+      <li class="menu__item menu__item--active">
+        <span>
           подбор программы
-        </a>
+        </span>
       </li>
     </ul>
   </nav>
@@ -40,15 +39,16 @@
         <fieldset class="form__fieldset fieldset">
           <p class="form__group">
             <label class="form__label" for="name">ИМЯ:*</label>
-            <input class="form__field field field--error" type="text" id="name" name="name" placeholder="барсик" required>
+            <!-- класс error для примера стилей -->
+            <input class="form__field form__field--error" type="text" id="name" name="name" placeholder="барсик" required>
           </p>
           <p class="form__group">
             <label class="form__label" for="weight">Вес (кг):*</label>
-            <input class="form__field field field--error" type="number" id="weight" name="name" placeholder="7" required>
+            <input class="form__field" type="number" id="weight" name="weight" placeholder="7" required>
           </p>
           <p class="form__group">
             <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__field field field--error" type="number" id="age" name="name" placeholder="7" required>
+            <input class="form__field" type="number" id="age" name="age" placeholder="7" required>
           </p>
           <ul class="form__control-group">
             <li class="form__control-group-item">
@@ -78,18 +78,18 @@
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <p class="form__group">
             <label class="form__label" for="email">Email:*</label>
-            <input class="form__field field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <input class="form__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
           </p>
           <p class="form__group">
             <label class="form__label" for="phone">Телефон:*</label>
-            <input class="form__field field" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
           </p>
         </fieldset>
         <fieldset class="form__fieldset fieldset">
           <legend class="form__legend">Комментарий</legend>
           <p class="form__group">
             <label>
-              <textarea class="form__field field field--textarea" name="message" placeholder="Расскажите обо всех повАдках кота">
+              <textarea class="form__field form__field--textarea" name="message" placeholder="Расскажите обо всех повАдках кота">
               </textarea>
             </label>
           </p>
@@ -106,21 +106,21 @@
             </li>
             <li class="form__control-group-item">
               <label class="form__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="water" value="water" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="water" value="water">
                 <span class="control__mark"></span>
                 <span class="control__label">питьевая вода</span>
               </label>
             </li>
             <li class="form__control-group-item">
               <label class="form__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="milk" value="milk" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="milk" value="milk">
                 <span class="control__mark"></span>
                 <span class="control__label">молоко</span>
               </label>
             </li>
             <li class="form__control-group-item">
               <label class="form__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="vitamins" value="vitamins" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="vitamins" value="vitamins">
                 <span class="control__mark"></span>
                 <span class="control__label">витамины</span>
               </label>
@@ -145,7 +145,7 @@
 </main>
 <footer class="footer">
   <a class="footer__logo" href="/">
-    <img class="logo" src="" width="" height="">
+    <img class="logo__slogan" src="img/logo.svg" width="128" height="24" alt="Cat Energy">
   </a>
   <div class="footer__social social">
     <ul class="social__list">
@@ -165,11 +165,12 @@
       </li>
     </ul>
   </div>
-  <div class="footer__copyright copyright">
-    <b class="visually-hidden">Разработано:</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <img class="copyright__image" alt="">
-  </div>
+  <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+    <span class="copyright__text" >
+      <b class="visually-hidden">Разработано:</b> HTML Academy
+    </span>
+    <img class="copyright__image" src="img/html-logo.svg" width="27" height="34" alt="HTML Academy Logo">
+  </a>
 </footer>
 </body>
 </html>

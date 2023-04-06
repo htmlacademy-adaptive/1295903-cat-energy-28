@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Каталог | HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
 <header class="header">
-  <a class="header__logo" href="/">
-    <img class="header__logo-image" src="" width="" height="">
-    <img class="header__logo-slogan logo" src="" width="" height="">
-    <span></span>
+  <a class="header__logo logo" href="index.html">
+    <img class="logo__image" src="img/logo-mobile.svg" width="" height="" alt="Кэт энерджи">
+    <img class="logo__slogan " src="img/logo.svg" width="101" height="" alt="18">
   </a>
   <nav class="nav">
     <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="nav__list menu">
       <li class="menu__item">
-        <a>
+        <a href="index.html">
           Главная
         </a>
       </li>
       <li class="menu__item menu__item--active">
-        <a>
+        <span>
           каталог продукции
-        </a>
+        </span>
       </li>
       <li class="menu__item">
-        <a>
+        <a href="form.html">
           подбор программы
         </a>
       </li>
@@ -38,10 +37,12 @@
       <h1 class="catalog__title">Каталог продукции</h1>
       <h2 class="visually-hidden">Товары</h2>
       <ul class="catalog__list">
-        <li class="catalog__item card--vertical">
-          <img class="card__image">
-          <h3 class="card__title">Cat Energy PRO <span class="card__title-feature">500 г</span></h3>
-          <ul class="card__feature feature">
+        <li class="catalog__item catalog-card">
+          <a class="catalog-card__info">
+            <img class="catalog-card__image" src="img/catalog-1-desktop.png" alt="">
+            <h3 class="catalog-card__title">Cat Energy PRO <span class="card__title-feature">500 г</span></h3>
+          </a>
+          <ul class="catalog-card__feature feature">
             <li class="feature__item">
               <span class="feature__key">Масса</span>
               <span class="feature__value">1000 г</span>
@@ -55,12 +56,13 @@
               <span class="feature__value">700 ₽</span>
             </li>
           </ul>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="catalog-card__button button" href="form.html">заказать</a>
         </li>
         <li class="catalog__item catalog-more">
           <span class="catalog-more__title">Показать еще 100500 товаров</span>
           <span class="catalog-more__description">На самом деле вкусов гораздо больше!</span>
-          <a class="catalog-more__button">показать все</a>
+          <!-- При отключенном JS должен осуществляться переход на страницу новых товаров -->
+          <a class="catalog-more__button" href="catalog.html/#all">показать все</a>
         </li>
       </ul>
     </div>
@@ -76,13 +78,14 @@
               <li class="feature__item">
                 <span class="feature__key">1 упаковка (100 г)</span>
                 <span class="feature__value">200 ₽</span>
+                <a class="feature__button button" href="form.html">заказать</a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="additional__gift gift">
-          <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
+        <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
       </div>
     </div>
   </section>
@@ -97,7 +100,7 @@
 </main>
 <footer class="footer">
   <a class="footer__logo" href="/">
-    <img class="logo" src="" width="" height="">
+    <img class="logo__slogan" src="img/logo.svg" width="128" height="24" alt="Cat Energy">
   </a>
   <div class="footer__social social">
     <ul class="social__list">
@@ -117,11 +120,12 @@
       </li>
     </ul>
   </div>
-  <div class="footer__copyright copyright">
-    <b class="visually-hidden">Разработано:</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <img class="copyright__image" alt="">
-  </div>
+  <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+    <span class="copyright__text" >
+      <b class="visually-hidden">Разработано:</b> HTML Academy
+    </span>
+    <img class="copyright__image" src="img/html-logo.svg" width="27" height="34" alt="HTML Academy Logo">
+  </a>
 </footer>
 </body>
 </html>
