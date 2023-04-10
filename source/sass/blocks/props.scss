@@ -1,0 +1,44 @@
+@import "../settings";
+
+.props {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 34px;
+}
+
+.props__item {
+  position: relative;
+  min-width: 124px;
+  padding: 15px 0 17px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.props__value {
+  font-family: $captionFont;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.props__key {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0 14px;
+  font-size: 12px;
+  line-height: 12px;
+  transform: translate(-50%, 50%);
+  background-color: #eaeaea;
+}
+
+.props__result {
+  font-family: $captionFont;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  grid-column: 1 / 3;
+}

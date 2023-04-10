@@ -1,0 +1,41 @@
+@import "../settings";
+
+.request {
+  padding-bottom: 32px;
+}
+
+.request__title {
+  margin: 0 0 37px 0;
+  font-family: $captionFont;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+
+.request__subtitle {
+  margin: 0 0 40px 0;
+  font-family: $captionFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.request__contact {
+  margin-top: 26px;
+  padding-bottom: 24px;
+}
+
+.request__message {
+  padding-bottom: 22px;
+}
+
+.request__additional {
+  padding-bottom: 34px;
+}
+
+.request__mode {
+  margin-top: 24px;
+}

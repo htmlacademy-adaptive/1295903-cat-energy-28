@@ -3,95 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог | HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="header">
-  <a class="header__logo logo" href="index.html">
-    <img class="logo__image" src="img/logo-mobile.svg" width="" height="" alt="Кэт энерджи">
-    <img class="logo__slogan " src="img/logo.svg" width="101" height="" alt="18">
-  </a>
-  <nav class="nav">
-    <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="nav__list menu">
-      <li class="menu__item">
-        <a href="index.html">
-          Главная
-        </a>
-      </li>
-      <li class="menu__item menu__item--active">
-        <span>
-          каталог продукции
-        </span>
-      </li>
-      <li class="menu__item">
-        <a href="form.html">
-          подбор программы
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <div class="header__wrapper container">
+    <span class="header__logo logo">
+      <img class="logo__image" src="img/logo-mobile.svg" width="" height="" alt="Кэт энерджи">
+      <img class="logo__slogan " src="img/logo.svg" width="101" height="" alt="18">
+    </span>
+    <nav class="header__nav nav">
+      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="nav__list header__menu menu">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="menu__item menu__item--active">
+          <span class="menu__link">
+            каталог продукции
+          </span>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="form.html">
+            подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main class="main-container">
   <section class="catalog">
     <div class="catalog__wrapper">
-      <h1 class="catalog__title">Каталог продукции</h1>
+      <h1 class="catalog__title container">Каталог продукции</h1>
       <h2 class="visually-hidden">Товары</h2>
       <ul class="catalog__list">
-        <li class="catalog__item catalog-card">
-          <a class="catalog-card__info" href="catalog.html/#1">
-            <img class="catalog-card__image" src="img/catalog-1-desktop.png" alt="">
-            <h3 class="catalog-card__title">Cat Energy PRO <span class="catalog-card__title-feature">500 г</span></h3>
-          </a>
-          <ul class="catalog-card__feature feature">
-            <li class="feature__item">
-              <span class="feature__key">Масса</span>
-              <span class="feature__value">1000 г</span>
-            </li>
-            <li class="feature__item">
-              <span class="feature__key">Вкус</span>
-              <span class="feature__value">Курица</span>
-            </li>
-            <li class="feature__item">
-              <span class="feature__key">Цена</span>
-              <span class="feature__value">700 ₽</span>
-            </li>
-          </ul>
+        <li class="catalog__item catalog-card container">
+          <div class="catalog-card__content">
+            <a class="catalog-card__image-wrapper" href="catalog.html/#1">
+              <img class="catalog-card__image" src="img/catalog-1-desktop.png" alt="">
+            </a>
+            <div class="catalog-card__info">
+              <a class="catalog-card__title-link" href="catalog.html/#1">
+                <h3 class="catalog-card__title">Cat Energy PRO <span class="catalog-card__title-feature">500 г</span></h3>
+              </a>
+              <ul class="catalog-card__feature feature">
+                <li class="feature__item">
+                  <span class="feature__key">Масса</span>
+                  <span class="feature__value">1000 г</span>
+                </li>
+                <li class="feature__item">
+                  <span class="feature__key">Вкус</span>
+                  <span class="feature__value">Курица</span>
+                </li>
+                <li class="feature__item">
+                  <span class="feature__key">Цена</span>
+                  <span class="feature__value">700 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
           <a class="catalog-card__button button" href="form.html">заказать</a>
         </li>
-        <li class="catalog__item catalog-more">
+        <li class="catalog__item catalog-more container">
           <span class="catalog-more__title">Показать еще 100500 товаров</span>
           <span class="catalog-more__description">На самом деле вкусов гораздо больше!</span>
           <!-- При отключенном JS должен осуществляться переход на страницу новых товаров -->
-          <a class="catalog-more__button" href="catalog.html/#all">показать все</a>
+          <a class="catalog-more__button button button--light" href="catalog.html/#all">показать все</a>
         </li>
       </ul>
     </div>
   </section>
   <section class="additional">
     <div class="additional__wrapper">
-      <div class="additional__goods">
-        <h2 class="additional__title">Дополнительные товары</h2>
-        <ul class="additional__list">
-          <li class="additional__item">
-            <span>Сахарозаменитель</span>
-            <ul class="additional__list feature">
-              <li class="feature__item">
-                <span class="feature__key">1 упаковка (100 г)</span>
-                <span class="feature__value">200 ₽</span>
-                <a class="feature__button button" href="form.html">заказать</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="additional__gift gift">
-        <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
+      <h2 class="additional__title">Дополнительные товары</h2>
+      <div class="container">
+        <div class="additional__goods">
+          <ul class="additional__list">
+            <li class="additional__item">
+              <span class="additional__item-title">Сахарозаменитель</span>
+              <ul class="additional__feature feature">
+                <li class="feature__item">
+                  <span class="feature__key">1 упаковка (100 г)</span>
+                  <span class="feature__value">200 ₽</span>
+                </li>
+              </ul>
+              <a class="additional__button button" href="form.html">заказать</a>
+            </li>
+            <li class="additional__item">
+              <span class="additional__item-title">питьевая вода</span>
+              <ul class="additional__feature feature">
+                <li class="feature__item">
+                  <span class="feature__key">5 литров</span>
+                  <span class="feature__value">50 ₽</span>
+                </li>
+              </ul>
+              <a class="additional__button button" href="form.html">заказать</a>
+            </li>
+          </ul>
+        </div>
+        <div class="additional__gift gift">
+          <h2 class="gift__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h2>
+        </div>
       </div>
     </div>
   </section>
   <section class="map">
-    <div class="map__banner partnership">
-      <h2 class="partnership__title">приглашаем к сотрудничеству дилеров!</h2>
+    <div class="map__banner map__banner--inner partnership">
+      <h2 class="partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
       <address class="partnership__address">
         ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург
       </address>
@@ -99,33 +121,35 @@
   </section>
 </main>
 <footer class="footer">
-  <a class="footer__logo logo" href="index.html">
-    <img class="logo__slogan" src="img/logo.svg" width="128" height="24" alt="Cat Energy">
-  </a>
-  <div class="footer__social social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Вконтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Мы в Ютубе</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Мы в Телеграме</span></a>
-      </li>
-    </ul>
-  </div>
-  <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-    <span class="copyright__text" >
+  <div class="container">
+    <a class="footer__logo logo" href="index.html">
+      <img class="logo__slogan" src="img/logo.svg" width="128" height="24" alt="Cat Energy">
+    </a>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span></a>
+        </li>
+      </ul>
+    </div>
+    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+    <span class="copyright__text">
       <b class="visually-hidden">Разработано:</b> HTML Academy
     </span>
-    <img class="copyright__image" src="img/html-logo.svg" width="27" height="34" alt="HTML Academy Logo">
-  </a>
+      <img class="copyright__image" src="img/html-logo.svg" width="27" height="34" alt="HTML Academy Logo">
+    </a>
+  </div>
 </footer>
 </body>
 </html>
