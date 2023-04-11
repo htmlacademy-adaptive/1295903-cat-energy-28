@@ -1,0 +1,33 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin: 0 12px;
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--vkontakte {
+    background-image: url("../img/vkontakte.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/youtube.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/telegram.svg");
+  }
+}

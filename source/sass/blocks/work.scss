@@ -1,0 +1,60 @@
+.work {
+  padding-bottom: 50px;
+}
+
+.work__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: $captionFont;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+}
+
+.work__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    display: block;
+    flex: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    content: "";
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--compound::before {
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--format::before {
+    background-image: url("../img/icon-water.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/icon-eat.svg");
+  }
+
+  &--time::before {
+    background-image: url("../img/icon-time.svg");
+  }
+}
+
+.work__step {
+  display: none;
+}
+
+.work__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

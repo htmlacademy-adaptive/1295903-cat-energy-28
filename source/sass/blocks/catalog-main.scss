@@ -1,0 +1,9 @@
+.catalog-main {
+  margin-bottom: 20px;
+}
+
+.catalog-main__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

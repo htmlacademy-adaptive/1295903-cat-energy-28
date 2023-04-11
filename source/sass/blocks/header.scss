@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  background: #ffffff;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  display: none;
+  background: #ffffff;
+
+  &--is-open {
+    display: block;
+  }
+}
