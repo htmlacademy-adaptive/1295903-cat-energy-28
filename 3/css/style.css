@@ -824,8 +824,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 45px;
   min-height: 30px;
+  padding-left: 45px;
 }
 
 .control__label {
