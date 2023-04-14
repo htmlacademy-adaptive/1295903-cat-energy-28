@@ -20,6 +20,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__field {
@@ -28,9 +33,9 @@
   font-family: $captionFont;
   font-size: 16px;
   line-height: 18px;
+  color: #444444;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
-  color: #444444;
 
   &--textarea {
     min-height: 150px;
@@ -40,6 +45,16 @@
 
   &::-webkit-input-placeholder {
     color: #444444;
+  }
+
+  @media (min-width: $media-tablet) {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--textarea {
+      min-height: 175px;
+    }
   }
 }
 
@@ -52,6 +67,10 @@
     padding: 20px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+
+    @media (min-width: $media-tablet) {
+      border: 1px solid #e7e7e7;
+    }
   }
 }
 
@@ -62,39 +81,33 @@
 }
 
 .form__legend {
-  display: flex;
   width: 100%;
   margin-top: 0;
   margin-bottom: 36px;
-  padding: 0 0 0 20px;
-  font-family: $captionFont;
+  padding-left: 0;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
   color: #000000;
 
-  &::before,
-  &::after {
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin-top: 16px;
-    content: "";
-    background-color: #68b738;
-  }
+  @media (min-width: $media-tablet) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
 
-  &::before {
-    content: none;
-  }
-
-  &::after {
-    margin-left: 14px;
+    &--add {
+      margin-bottom: 57px;
+    }
   }
 }
 
 .form__button {
   width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .form__caption {
@@ -102,4 +115,31 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $media-tablet) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.form__submit {
+  @media (min-width: $media-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+  }
+
+  @media (min-width: $media-desktop) {
+    grid-template-columns: 568px auto;
+    column-gap: 84px;
+  }
+}
+
+.form__row {
+  @media (min-width: $media-desktop) {
+    display: grid;
+    grid-template-columns: auto 570px;
+    column-gap: 80px;
+  }
 }

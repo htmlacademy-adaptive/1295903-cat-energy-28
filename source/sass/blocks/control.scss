@@ -4,6 +4,11 @@
   align-items: center;
   min-height: 30px;
   padding-left: 45px;
+
+  @media (min-width: $media-tablet) {
+    min-height: 40px;
+    padding-left: 60px;
+  }
 }
 
 .control__label {
@@ -11,6 +16,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .control__mark {
@@ -23,5 +33,10 @@
 
   &--radio {
     border-radius: 50%;
+  }
+
+  @media (min-width: $media-tablet) {
+    width: 40px;
+    height: 40px;
   }
 }

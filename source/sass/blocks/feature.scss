@@ -1,10 +1,27 @@
 .feature {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .feature__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $media-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &--decor {
+      border-bottom: 1px solid #cdcdcd;
+      padding-bottom: 9px;
+    }
+  }
+}
+
+.feature__key {
+  @media (min-width: $media-tablet) {
+    margin-right: 50px;
+  }
 }

@@ -1,7 +1,15 @@
 .example {
   padding-top: 25px;
-  padding-bottom: 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 43px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 0;
+  }
 }
 
 .example__title {
@@ -12,9 +20,48 @@
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-bottom: 145px;
+  }
 }
 
 .example__description {
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.example__slider {
+  padding-bottom: 40px;
+
+  @media (min-width: $media-tablet) {
+    margin-top: 91px;
+    padding-bottom: 101px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $media-desktop) {
+    display: flex;
+  }
+}
+
+.example__info {
+  @media (min-width: $media-desktop) {
+    max-width: 430px;
+  }
 }

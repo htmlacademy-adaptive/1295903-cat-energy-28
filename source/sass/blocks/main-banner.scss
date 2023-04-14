@@ -6,6 +6,17 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+
+  @media (min-width: $media-tablet) {
+    min-height: 875px;
+    color: #000000;
+    background-image: none;
+  }
+
+  @media (min-width: $media-desktop) {
+    min-height: 695px;
+    margin-bottom: 82px;
+  }
 }
 
 .main-banner__wrapper {
@@ -13,6 +24,32 @@
   align-items: center;
   flex-direction: column;
   padding: 27px 20px 0;
+
+  @media (min-width: $media-tablet) {
+    position: relative;
+    align-items: flex-start;
+    padding: 62px 118px 0;
+  }
+
+  @media (min-width: $media-desktop) {
+    min-height: 695px;
+    padding: 140px 80px 50px;
+  }
+}
+
+.main-banner__image {
+  @media (min-width: $media-tablet) {
+    position: absolute;
+    top: calc(100% - 85px);
+    right: 30px;
+    left: 30px;
+    z-index: -1;
+  }
+
+  @media (min-width: $media-desktop) {
+    top: 140px;
+    left: calc(50% - 162px);
+  }
 }
 
 .main-banner__title {
@@ -23,6 +60,14 @@
   font-weight: 400;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $media-tablet) {
+    max-width: 420px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .main-banner__description {
@@ -31,8 +76,21 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .main-banner__button {
   width: 100%;
+
+  @media (min-width: $media-tablet) {
+    width: 245px;
+    padding: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

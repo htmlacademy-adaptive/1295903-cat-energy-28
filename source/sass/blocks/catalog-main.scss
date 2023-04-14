@@ -1,9 +1,37 @@
 .catalog-main {
   margin-bottom: 20px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-bottom: 70px;
+  }
 }
 
 .catalog-main__item {
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $media-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.catalog-main__wrapper {
+  @media (min-width: $media-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }

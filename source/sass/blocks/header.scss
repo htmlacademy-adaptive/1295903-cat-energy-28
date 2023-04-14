@@ -3,6 +3,23 @@
   padding-top: 10px;
   padding-bottom: 18px;
   background: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $media-desktop) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 53px;
+
+    &--inner {
+      position: relative;
+    }
+  }
 }
 
 .header__wrapper {
@@ -24,5 +41,10 @@
 
   &--is-open {
     display: block;
+  }
+
+  @media (min-width: $media-tablet) {
+    position: static;
+    display: flex;
   }
 }
