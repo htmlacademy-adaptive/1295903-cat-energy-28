@@ -9,4 +9,8 @@
   background-color: transparent;
   background-image: url("../img/menu.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $media-tablet) {
+    display: none;
+  }
 }

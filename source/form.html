@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<header class="header">
+<header class="header header--inner">
   <div class="header__wrapper container">
     <span class="header__logo logo">
       <img class="logo__image" src="img/logo-mobile.svg" width="" height="" alt="Кэт энерджи">
@@ -38,55 +38,63 @@
 <main class="main-container">
   <section class="request">
     <div class="request__wrapper">
-      <div class="container">
+      <div class="container container--inner">
         <h1 class="request__title">Подбор программы</h1>
         <h2 class="request__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       </div>
       <form class="request__form form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__fieldset fieldset">
-          <div class="container">
-            <p class="form__group">
-              <label class="form__label" for="name">ИМЯ:*</label>
-              <!-- класс error для примера стилей -->
-              <input class="form__field form__field--error" type="text" id="name" name="name" placeholder="барсик" required>
-            </p>
-            <p class="form__group">
-              <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="form__field" type="number" id="weight" name="weight" placeholder="7" required>
-            </p>
-            <p class="form__group">
-              <label class="form__label" for="age">Возраст (лет):</label>
-              <input class="form__field" type="number" id="age" name="age" placeholder="7" required>
-            </p>
+          <div class="form__row container container--inner">
+            <div class="request__cat">
+              <p class="form__group">
+                <label class="form__label" for="name">ИМЯ:*</label>
+                <!-- класс error для примера стилей -->
+                <input class="form__field form__field--error" type="text" id="name" name="name" placeholder="барсик" required>
+              </p>
+              <p class="form__group">
+                <label class="form__label" for="weight">Вес&nbsp;(кг):*</label>
+                <input class="form__field" type="number" id="weight" name="weight" placeholder="7" required>
+              </p>
+              <p class="form__group">
+                <label class="form__label" for="age">Возраст&nbsp;(лет):</label>
+                <input class="form__field" type="number" id="age" name="age" placeholder="7" required>
+              </p>
+            </div>
+            <div class="request__mode">
+              <ul class="form__control-group form__control-group--accent">
+                <li class="form__control-group-item">
+                  <label class="form__control control">
+                    <input class="visually-hidden control__input" type="radio" name="mode" value="weight-loss" checked>
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">похудение</span>
+                  </label>
+                </li>
+                <li class="form__control-group-item">
+                  <label class="form__control control">
+                    <input class="visually-hidden control__input" type="radio" name="mode" value="mass-gain">
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__control-group-item">
+                  <label class="form__control control">
+                    <input class="visually-hidden control__input" type="radio" name="mode" value="help">
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <ul class="request__mode form__control-group form__control-group--accent">
-            <li class="form__control-group-item">
-              <label class="form__control control">
-                <input class="visually-hidden control__input" type="radio" name="mode" value="weight-loss" checked>
-                <span class="control__mark control__mark--radio"></span>
-                <span class="control__label">похудение</span>
-              </label>
-            </li>
-            <li class="form__control-group-item">
-              <label class="form__control control">
-                <input class="visually-hidden control__input" type="radio" name="mode" value="mass-gain">
-                <span class="control__mark control__mark--radio"></span>
-                <span class="control__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="form__control-group-item">
-              <label class="form__control control">
-                <input class="visually-hidden control__input" type="radio" name="mode" value="help">
-                <span class="control__mark control__mark--radio"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
         </fieldset>
         <fieldset class="request__contact form__fieldset fieldset">
-          <legend class="form__legend">Контактные&nbsp;данные (владельца кота)</legend>
-          <div class="container">
+          <legend class="form__legend title title--decor">
+            <span class="container">
+              <span class="title__text">Контактные&nbsp;данные (владельца&nbsp;кота)</span>
+            </span>
+          </legend>
+
+          <div class="form__row container container--inner">
             <p class="form__group">
               <label class="form__label" for="email">Email:*</label>
               <input class="form__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -98,8 +106,12 @@
           </div>
         </fieldset>
         <fieldset class="request__message form__fieldset fieldset">
-          <legend class="form__legend">Комментарий</legend>
-          <div class="container">
+          <legend class="form__legend title title--decor">
+            <span class="container">
+              <span class="title__text">Комментарий</span>
+            </span>
+          </legend>
+          <div class="container container--inner">
             <p class="form__group">
               <label class="visually-hidden" for="message"></label>
               <textarea class="form__field form__field--textarea" name="message" id="message">Расскажите обо всех повАдках кота
@@ -108,8 +120,12 @@
           </div>
         </fieldset>
         <fieldset class="request__additional form__fieldset fieldset">
-          <legend class="form__legend">Дополнительно</legend>
-          <div class="container">
+          <legend class="form__legend form__legend--add title title--decor">
+            <span class="container">
+              <span class="title__text">Дополнительно</span>
+            </span>
+          </legend>
+          <div class="container container--inner">
             <ul class="request__additional-control form__control-group">
               <li class="form__control-group-item">
                 <label class="form__control control">
@@ -142,7 +158,7 @@
             </ul>
           </div>
         </fieldset>
-        <div class="container">
+        <div class="form__submit container container--inner">
           <button class="form__button button" type="submit">
             отправить заявку
           </button>
@@ -152,16 +168,18 @@
     </div>
   </section>
   <section class="map">
-    <div class="map__banner map__banner--inner partnership">
-      <h2 class="partnership__title">приглашаем к сотрудничеству дилеров!</h2>
-      <address class="partnership__address">
-        ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург
-      </address>
+    <div class="map__wrapper container">
+      <div class="map__banner map__banner--inner partnership">
+        <h2 class="partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <address class="partnership__address">
+          ул. Большая Конюшенная, д. 19/8<br> <span class="partnership__address-city">Санкт-Петербург</span>
+        </address>
+      </div>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <div class="container">
+  <div class="footer__wrapper container">
     <a class="footer__logo logo" href="index.html">
       <img class="logo__slogan" src="img/logo.svg" width="128" height="24" alt="Cat Energy">
     </a>

@@ -1,11 +1,28 @@
 .footer {
-  padding: 40px 0;
   text-align: center;
   background: #f2f2f2;
 }
 
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $media-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
 .footer__logo {
   margin-bottom: 20px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social {
@@ -13,4 +30,9 @@
   padding: 20px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 0;
+    border: none;
+  }
 }

@@ -1,17 +1,38 @@
 .card {
   padding: 21px 20px 22px;
   background: #f2f2f2;
+
+  @media (min-width: $media-tablet) {
+    position: relative;
+    padding: 77px 315px 57px 52px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding: 40px 67px 60px 50px;
+  }
 }
 
 .card__title {
   display: flex;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 22px;
   font-family: $captionFont;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .card__image {
@@ -40,9 +61,45 @@
     border-radius: 50%;
     background: #68b738;
   }
+
+  @media (min-width: $media-tablet) {
+    position: absolute;
+    top: 92px;
+    right: 62px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $media-desktop) {
+    position: relative;
+    top: 0;
+    right: auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 62px;
+  }
 }
 
 .card__description {
+  margin: 0 0 20px 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 52px;
+    padding-bottom: 0;
+    color: #000000;
+    border: none;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-bottom: 27px;
+  }
+}
+
+.card__button {
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

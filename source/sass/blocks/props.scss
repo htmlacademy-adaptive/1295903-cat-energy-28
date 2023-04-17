@@ -1,8 +1,18 @@
 .props {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 34px;
+  column-gap: 32px;
+  row-gap: 34px;
+
+  @media (min-width: $media-tablet) {
+    grid-template-columns: 162px 162px auto;
+    column-gap: 42px;
+  }
+
+  @media (min-width: $media-desktop) {
+    grid-template-columns: 162px 162px;
+    row-gap: 60px;
+  }
 }
 
 .props__item {
@@ -12,6 +22,10 @@
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $media-tablet) {
+    padding: 15px 25px 20px;
+  }
 }
 
 .props__value {
@@ -20,6 +34,11 @@
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $media-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .props__key {
@@ -31,6 +50,15 @@
   line-height: 12px;
   transform: translate(-50%, 50%);
   background-color: #eaeaea;
+
+  @media (min-width: $media-tablet) {
+    width: max-content;
+    max-width: calc(100% - 16px);
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }
 
 .props__result {
@@ -41,4 +69,30 @@
   text-align: center;
   text-transform: uppercase;
   grid-column: 1 / 3;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    grid-column: unset;
+  }
+
+  @media (min-width: $media-desktop) {
+    text-align: left;
+    grid-column: 1 / 3;
+  }
+}
+
+.props__result-key {
+  @media (min-width: $media-tablet) {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: auto;
+    margin-right: 63px;
+    margin-bottom: 0;
+  }
 }
