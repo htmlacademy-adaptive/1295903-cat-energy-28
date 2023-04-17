@@ -934,6 +934,7 @@ body {
 }
 
 .map__banner {
+  margin: 0 -20px;
   background: #ffffff;
 }
 .map__banner--inner {
@@ -945,7 +946,12 @@ body {
     top: 95px;
     left: 110px;
     width: 565px;
+    margin: 0;
   }
+}
+
+.map__wrapper {
+  position: relative;
 }
 
 .card {
@@ -1662,8 +1668,8 @@ body {
 }
 @media (min-width: 768px) {
   .partnership__address {
-    text-align: right;
     max-width: 160px;
+    text-align: right;
   }
 }
 @media (min-width: 1440px) {
