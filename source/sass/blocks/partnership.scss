@@ -35,8 +35,8 @@
   line-height: 20px;
 
   @media (min-width: $media-tablet) {
-    text-align: right;
     max-width: 160px;
+    text-align: right;
   }
 
   @media (min-width: $media-desktop) {
