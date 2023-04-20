@@ -1,7 +1,7 @@
 .nav__toggle {
   display: block;
   width: 24px;
-  height: 18px;
+  height: 24px;
   padding: 0;
   cursor: pointer;
   border: none;
@@ -9,6 +9,11 @@
   background-color: transparent;
   background-image: url("../img/menu.svg");
   background-repeat: no-repeat;
+  background-position: center;
+
+  &--is-open {
+    background-image: url("../img/menu-open.svg");
+  }
 
   @media (min-width: $media-tablet) {
     display: none;

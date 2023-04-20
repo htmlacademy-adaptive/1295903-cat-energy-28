@@ -11,9 +11,9 @@
 
   @media (min-width: $media-desktop) {
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
+    right: 0;
+    left: 0;
     padding-top: 53px;
 
     &--inner {
@@ -47,4 +47,26 @@
     position: static;
     display: flex;
   }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $media-tablet) {
+    width: auto;
+  }
+}
+
+.header__logo-slogan {
+  margin: 0 auto;
+
+  @media (min-width: $media-tablet) {
+    margin: 0 0 0 12px;
+  }
+}
+
+.header__menu-toggle:hover + .header__menu {
+  display: block;
 }

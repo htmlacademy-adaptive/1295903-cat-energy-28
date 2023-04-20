@@ -5,6 +5,7 @@
 }
 
 .form__group {
+  position: relative;
   display: flex;
   align-items: center;
   margin: 0;
@@ -12,6 +13,14 @@
   &:not(:last-child) {
     margin-bottom: 14px;
   }
+}
+
+.form__group-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  stroke: #000000;
 }
 
 .form__label {
@@ -29,13 +38,17 @@
 
 .form__field {
   width: 100%;
-  padding: 13px 20px;
+  padding: 13px 48px 13px 20px;
   font-family: $captionFont;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+  background-size: 20px;
 
   &--textarea {
     min-height: 150px;
@@ -43,14 +56,43 @@
     resize: none;
   }
 
+  &--error {
+    border-color: #ff8282;
+    outline: 1px solid #ff8282;
+
+    & + .form__group-icon {
+      stroke: #ff8282;
+    }
+  }
+
   &::-webkit-input-placeholder {
     color: #444444;
   }
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #444444;
+    border-radius: 0;
+    outline: 1px solid #444444;
+
+    .form__field-icon {
+      fill: #68b738;
+    }
+
+    & + .form__group-icon {
+      stroke: #68b738;
+    }
+  }
+
   @media (min-width: $media-tablet) {
-    padding: 10px 20px;
+    padding: 10px 50px 10px 20px;
     font-size: 20px;
     line-height: 30px;
+    background-position: center right 18px;
 
     &--textarea {
       min-height: 175px;

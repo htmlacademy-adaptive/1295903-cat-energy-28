@@ -9,6 +9,10 @@
     min-height: 40px;
     padding-left: 60px;
   }
+
+  &--disabled {
+    opacity: 0.3;
+  }
 }
 
 .control__label {
@@ -33,10 +37,48 @@
 
   &--radio {
     border-radius: 50%;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      width: 13px;
+      height: 13px;
+      margin: auto;
+      content: "";
+      border-radius: 50%;
+      background-color: #68b738;
+    }
   }
 
   @media (min-width: $media-tablet) {
     width: 40px;
     height: 40px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.control__check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  margin: auto;
+  fill: #68b738;
+}
+
+.control__input {
+  &:checked + .control__mark .control__check,
+  &:checked + .control__mark--radio::after {
+    display: block;
   }
 }
