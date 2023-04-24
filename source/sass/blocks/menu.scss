@@ -17,7 +17,7 @@
 
   @media (min-width: $media-tablet) {
     margin: 0 17px;
-    padding: 18px 0 12px;
+    padding: 18px 0 8px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -29,13 +29,21 @@
   }
 
   @media (min-width: $media-desktop) {
-    padding: 0;
+    padding-top: 0;
     margin: 0 18px;
     font-size: 20px;
     line-height: 30px;
 
     &--active {
       border-bottom: 2px solid #ffffff;
+    }
+  }
+}
+
+.menu__item--inner {
+  @media (min-width: $media-desktop) {
+    &.menu__item--active {
+      border-bottom: 2px solid #68b738;
     }
   }
 }

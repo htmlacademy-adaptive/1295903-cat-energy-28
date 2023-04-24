@@ -1,14 +1,17 @@
 .example {
   padding-top: 25px;
-  background-color: #eaeaea;
+  background: #eaeaea;
 
   @media (min-width: $media-tablet) {
     padding-top: 43px;
-    background-color: #ffffff;
+    padding-bottom: 40px;
+    background: linear-gradient(180deg, #ffffff calc(100% - 462px), #eaeaea 462px);
   }
 
   @media (min-width: $media-desktop) {
     padding-top: 0;
+    padding-bottom: 101px;
+    background: linear-gradient(0deg, #eaeaea 462px, #ffffff calc(100% - 462px));
   }
 }
 
@@ -46,17 +49,24 @@
 }
 
 .example__slider {
-  padding-bottom: 40px;
-
   @media (min-width: $media-tablet) {
     margin-top: 91px;
-    padding-bottom: 101px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-top: 0;
   }
 }
 
 .example__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $media-desktop) {
-    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 

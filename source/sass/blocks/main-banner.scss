@@ -1,16 +1,26 @@
 .main-banner {
+  position: relative;
   margin-bottom: 20px;
   font-family: $captionFont;
   color: #ffffff;
-  background-image: url("../img/main-banner-mobile.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 302px;
+    content: "";
+    background-color: #62a53a;
+  }
 
   @media (min-width: $media-tablet) {
     min-height: 875px;
     color: #000000;
-    background-image: none;
+
+    &::before {
+      content: none;
+    }
   }
 
   @media (min-width: $media-desktop) {
@@ -24,16 +34,25 @@
   align-items: center;
   flex-direction: column;
   padding: 27px 20px 0;
+  background-image: url("../img/main-banner-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 302px;
 
   @media (min-width: $media-tablet) {
     position: relative;
     align-items: flex-start;
     padding: 62px 118px 0;
+    background-image: none;
   }
 
   @media (min-width: $media-desktop) {
     min-height: 695px;
     padding: 140px 80px 50px 190px;
+    background-image: url("../img/main-banner.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 695px;
   }
 }
 
@@ -43,12 +62,16 @@
     top: calc(100% - 85px);
     right: 30px;
     left: 30px;
+  }
+
+  @media (min-width: $media-tablet) {
     z-index: -1;
   }
 
   @media (min-width: $media-desktop) {
     top: 140px;
     left: calc(50% - 162px);
+    z-index: 1;
   }
 }
 

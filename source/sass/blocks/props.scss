@@ -59,6 +59,10 @@
     line-height: 14px;
     background-color: #ffffff;
   }
+
+  @media (min-width: $media-desktop) {
+    background-color: #eaeaea;
+  }
 }
 
 .props__result {
