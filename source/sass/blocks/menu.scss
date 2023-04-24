@@ -14,18 +14,37 @@
   text-transform: uppercase;
   border-top: 1px solid #e6e6e6;
 
+
   @media (min-width: $media-tablet) {
-    padding: 18px 17px 12px;
+    margin: 0 17px;
+    padding: 18px 0 8px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     border-top: none;
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
   }
 
   @media (min-width: $media-desktop) {
-    padding: 0 18px;
+    padding-top: 0;
+    margin: 0 18px;
     font-size: 20px;
     line-height: 30px;
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}
+
+.menu__item--inner {
+  @media (min-width: $media-desktop) {
+    &.menu__item--active {
+      border-bottom: 2px solid #68b738;
+    }
   }
 }
 

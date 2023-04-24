@@ -19,15 +19,22 @@
   background-position: center;
   background-size: contain;
 
-  &--vkontakte {
-    background-image: url("../img/vkontakte.svg");
+  &:active {
+    opacity: 0.3;
   }
 
-  &--youtube {
-    background-image: url("../img/youtube.svg");
-  }
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
 
-  &--telegram {
-    background-image: url("../img/telegram.svg");
+    .social__icon {
+      fill: #68b738;
+    }
   }
+}
+
+.social__icon {
+  fill: #666666;
 }

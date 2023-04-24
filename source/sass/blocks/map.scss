@@ -1,18 +1,13 @@
 .map {
-  @media (min-width: $media-desktop) {
-    position: relative;
-    height: 400px;
-    background-color: #ffedbd;
-  }
-}
-
-.map__banner {
-  margin: 0 -20px;
   background: #ffffff;
 
   &--inner {
     background: #f2f2f2;
   }
+}
+
+.map__banner {
+  margin: 0 -20px;
 
   @media (min-width: $media-desktop) {
     position: absolute;
@@ -20,9 +15,21 @@
     left: 110px;
     width: 565px;
     margin: 0;
+    background-color: #ffffff;
   }
 }
 
 .map__wrapper {
   position: relative;
+}
+
+.map__frame {
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: none;
+
+  @media (min-width: $media-tablet) {
+    height: 400px;
+  }
 }

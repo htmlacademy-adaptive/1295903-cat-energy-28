@@ -9,19 +9,83 @@
   border: none;
   background: #68b738;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    border: none;
+    outline: none;
+    background-color: #5eaa2f;
+  }
+
   &--light {
     color: #444444;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
+
+    &:hover {
+      color: #000000;
+      background-color: #ebebeb;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(#444444, 0.3);
+      background-color: #ebebeb;
+    }
   }
 
   &--more {
-    padding: 0 40px 0 0;
+    position: relative;
+    padding: 0 48px 0 0;
     font-size: 16px;
     line-height: 16px;
     color: #000000;
     background-color: transparent;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center right 8px;
+    background-size: 7px 12px;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 15px;
+      width: 18px;
+      height: 2px;
+      content: "";
+      background-color: #000000;
+    }
+
+    &:hover {
+      color: #000000;
+      background-color: transparent;
+    }
+
+    &:focus,
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-position: center right;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      right: 7px;
+      width: 26px;
+    }
+
+    @media (min-width: $media-tablet) {
+      padding: 0 58px 0 0;
+    }
   }
 }

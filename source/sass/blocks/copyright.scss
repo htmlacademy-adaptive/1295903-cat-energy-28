@@ -3,6 +3,20 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+
+    .copyright__image {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -10,4 +24,8 @@
   font-size: 16px;
   line-height: 19px;
   color: #444444;
+}
+
+.copyright__image {
+  fill: #666666;
 }
