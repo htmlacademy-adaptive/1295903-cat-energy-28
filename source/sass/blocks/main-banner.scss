@@ -3,6 +3,10 @@
   margin-bottom: 20px;
   font-family: $captionFont;
   color: #ffffff;
+  background-image: url("../img/main-banner-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 302px;
 
   &::before {
     position: absolute;
@@ -17,8 +21,11 @@
   @media (min-width: $media-tablet) {
     min-height: 875px;
     color: #000000;
+    background-image: none;
 
     &::before {
+      left: 50%;
+      height: 100%;
       content: none;
     }
   }
@@ -26,6 +33,15 @@
   @media (min-width: $media-desktop) {
     min-height: 695px;
     margin-bottom: 82px;
+    background-image: url("../img/main-banner.png");
+    background-position: top right;
+    background-size: auto 695px;
+
+    &::before {
+      left: 50%;
+      height: 100%;
+      content: "";
+    }
   }
 }
 
@@ -34,25 +50,16 @@
   align-items: center;
   flex-direction: column;
   padding: 27px 20px 0;
-  background-image: url("../img/main-banner-mobile.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto 302px;
 
   @media (min-width: $media-tablet) {
     position: relative;
     align-items: flex-start;
     padding: 62px 118px 0;
-    background-image: none;
   }
 
   @media (min-width: $media-desktop) {
     min-height: 695px;
     padding: 140px 80px 50px 190px;
-    background-image: url("../img/main-banner.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: auto 695px;
   }
 }
 

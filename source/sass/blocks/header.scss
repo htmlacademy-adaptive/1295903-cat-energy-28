@@ -54,7 +54,11 @@
   width: 100%;
 
   @media (min-width: $media-tablet) {
-    width: auto;
+    width: 175px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 202px;
   }
 }
 
@@ -62,7 +66,7 @@
   margin: 0 auto;
 
   @media (min-width: $media-tablet) {
-    margin: 0 0 0 12px;
+    display: none;
   }
 }
 
