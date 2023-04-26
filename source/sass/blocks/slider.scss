@@ -79,13 +79,37 @@
   &--before {
     left: 0;
     z-index: 2;
-    background-image: url("../img/slider-cat-big.png");
+    background-image: url("../img/slider-cat-big-mobile.png");
     background-position: left center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider-cat-big-mobile@2x.png");
+    }
+
+    @media (min-width: $media-tablet) {
+      background-image: url("../img/slider-cat-big.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/slider-cat-big@2x.png");
+      }
+    }
   }
 
   &--after {
     right: 0;
-    background-image: url("../img/slider-cat-slim.png");
+    background-image: url("../img/slider-cat-slim-mobile.png");
     background-position: right center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider-cat-slim-mobile@2x.png");
+    }
+
+    @media (min-width: $media-tablet) {
+      background-image: url("../img/slider-cat-slim.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/slider-cat-slim@2x.png");
+      }
+    }
   }
 }

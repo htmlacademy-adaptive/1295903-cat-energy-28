@@ -28,6 +28,16 @@
 .catalog-card__image {
   position: relative;
   z-index: 2;
+
+  @media (min-width: $media-tablet) {
+    width: 165px;
+    height: 200px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 172px;
+    height: 196px;
+  }
 }
 
 .catalog-card__image-wrapper {
