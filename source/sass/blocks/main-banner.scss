@@ -18,6 +18,10 @@
     background-color: #62a53a;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-banner-mobile@2x.png");
+  }
+
   @media (min-width: $media-tablet) {
     min-height: 875px;
     color: #000000;
@@ -41,6 +45,10 @@
       left: 50%;
       height: 100%;
       content: "";
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-banner@2x.png");
     }
   }
 }
