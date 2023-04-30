@@ -11,6 +11,7 @@
 
 .catalog-card__content {
   display: flex;
+  margin-bottom: 10px;
 
   @media (min-width: $media-tablet) {
     align-items: center;

@@ -1,13 +1,14 @@
 .request {
+  padding-top: 27px;
   padding-bottom: 32px;
 
   @media (min-width: $media-tablet) {
-    padding-top: 65px;
-    padding-bottom: 72px;
+    padding-top: 58px;
+    padding-bottom: 75px;
   }
 
   @media (min-width: $media-desktop) {
-    padding-top: 73px;
+    padding-top: 70px;
     padding-bottom: 69px;
   }
 }
@@ -28,6 +29,7 @@
 }
 
 .request__subtitle {
+  max-width: 225px;
   margin: 0 0 40px 0;
   font-family: $captionFont;
   font-size: 14px;
@@ -45,21 +47,37 @@
 }
 
 .request__contact {
-  margin-top: 26px;
+  margin-top: 20px;
   padding-bottom: 24px;
 
   @media (min-width: $media-tablet) {
-    margin-top: 75px;
-    padding-bottom: 65px;
+    margin-top: 67px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-top: 42px;
   }
 }
 
 .request__message {
-  padding-bottom: 22px;
+  padding-bottom: 17px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 36px;
+  }
 }
 
 .request__additional {
-  padding-bottom: 34px;
+  padding-bottom: 30px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-bottom: 50px;
+  }
 }
 
 .request__cat {

@@ -2,7 +2,11 @@
   padding-top: 27px;
 
   @media (min-width: $media-tablet) {
-    padding-top: 65px;
+    padding-top: 58px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 68px;
   }
 }
 

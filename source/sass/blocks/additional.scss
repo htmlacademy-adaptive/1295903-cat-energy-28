@@ -1,5 +1,5 @@
 .additional {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 35px;
 
   @media (min-width: $media-tablet) {
@@ -14,7 +14,7 @@
 }
 
 .additional__goods {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @media (min-width: $media-tablet) {
     margin-bottom: 70px;
@@ -28,6 +28,7 @@
 }
 
 .additional__title {
+  width: max-content;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 24px;
@@ -82,7 +83,8 @@
   }
 
   @media (min-width: $media-desktop) {
-    padding: 15px 0 17px;
+    justify-content: flex-start;
+    padding: 0 0 5px;
     border-right: none;
     border-left: none;
   }
@@ -116,15 +118,16 @@
   }
 
   @media (min-width: $media-desktop) {
+    width: 285px;
     margin-left: auto;
   }
 }
 
 .additional__wrapper {
-  margin-top: 36px;
+  margin-top: 33px;
 
   @media (min-width: $media-tablet) {
-    margin-top: 80px;
+    margin-top: 75px;
   }
 
   @media (min-width: $media-desktop) {

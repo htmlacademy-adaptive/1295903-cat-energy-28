@@ -24,6 +24,7 @@
 
   @media (min-width: $media-tablet) {
     min-height: 875px;
+    margin-bottom: 0;
     color: #000000;
     background-image: none;
 
@@ -67,7 +68,7 @@
 
   @media (min-width: $media-desktop) {
     min-height: 695px;
-    padding: 140px 80px 50px 190px;
+    padding: 223px 80px 50px 190px;
   }
 }
 
