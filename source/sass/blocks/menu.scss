@@ -45,6 +45,8 @@
 
 .menu__item--inner {
   @media (min-width: $media-desktop) {
+    padding-top: 7px;
+
     &.menu__item--active {
       border-bottom: 2px solid #68b738;
     }

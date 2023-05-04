@@ -1,6 +1,6 @@
 .catalog-card {
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   @media (min-width: $media-tablet) {
     position: relative;
@@ -98,7 +98,7 @@
 
   @media (min-width: $media-tablet) {
     max-width: 175px;
-    margin: 0 auto 20px;
+    margin: 0 auto 22px;
   }
 }
 
@@ -118,7 +118,7 @@
 
   @media (min-width: $media-tablet) {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 22px;
     text-align: center;
   }
 }

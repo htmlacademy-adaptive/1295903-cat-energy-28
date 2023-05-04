@@ -37,6 +37,7 @@
   right: 0;
   left: 0;
   display: none;
+  background-color: #ffffff;
 
   &--is-open {
     display: block;
@@ -45,6 +46,7 @@
   @media (min-width: $media-tablet) {
     position: static;
     display: flex;
+    background: transparent;
   }
 }
 
@@ -63,7 +65,7 @@
 }
 
 .header__logo-slogan {
-  margin: 0 auto;
+  margin-left: 57px;
 
   @media (min-width: $media-tablet) {
     display: none;

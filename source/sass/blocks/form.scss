@@ -41,6 +41,14 @@
   @media (min-width: $media-tablet) {
     font-size: 20px;
     line-height: 30px;
+
+    &--email {
+      margin-right: 28px;
+    }
+
+    &--phone {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -147,14 +155,20 @@
     line-height: 36px;
 
     &--add {
-      margin-bottom: 57px;
+      margin-bottom: 61px;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    &--add {
+      margin-bottom: 62px;
     }
   }
 }
 
 .form__button {
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 22px;
   font-size: 16px;
   line-height: 20px;
 

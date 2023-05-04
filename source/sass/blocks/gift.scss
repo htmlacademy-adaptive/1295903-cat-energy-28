@@ -46,7 +46,7 @@
     background-image: url("../img/gift-bg-tablet.jpg");
 
     &::before {
-      margin: 0;
+      margin: 0 0 7px;
     }
 
     @media (min-resolution: 2dppx) {
@@ -63,8 +63,8 @@
     background-image: url("../img/gift-bg.jpg");
 
     &::before {
-      margin-top: 46px;
-      margin-bottom: 55px;
+      margin-top: 55px;
+      margin-bottom: 45px;
     }
 
     @media (min-resolution: 2dppx) {

@@ -1,7 +1,11 @@
 .title {
   &--decor {
-    transform: translateY(50%);
+    transform: translateY(19px);
     border-top: 3px solid #68b738;
+
+    @media (min-width: $media-tablet) {
+      transform: translateY(28px);
+    }
   }
 }
 
@@ -14,15 +18,16 @@
   padding-right: 20px;
   padding-left: 20px;
   font-family: $captionFont;
-  transform: translateY(-50%);
+  transform: translateY(-19px);
   background: #ffffff;
 
   @media (min-width: $media-tablet) {
     width: auto;
-    margin-right: -35px;
+    margin-right: -37px;
     margin-left: 0;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 37px;
+    padding-left: 37px;
+    transform: translateY(-24px);
   }
 
   @media (min-width: $media-desktop) {

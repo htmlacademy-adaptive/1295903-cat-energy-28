@@ -12,8 +12,12 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 55px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 55px
   }
 }
 
