@@ -17,3 +17,10 @@
   width: 100%;
   height: auto;
 }
+
+.logo__slogan {
+  @media (min-width: $media-tablet) {
+    width: 142px;
+    height: auto;
+  }
+}

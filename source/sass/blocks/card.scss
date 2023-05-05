@@ -1,14 +1,14 @@
 .card {
-  padding: 21px 20px 22px;
+  padding: 23px 20px 22px;
   background: #f2f2f2;
 
   @media (min-width: $media-tablet) {
     position: relative;
-    padding: 77px 315px 57px 52px;
+    padding: 72px 315px 57px 52px;
   }
 
   @media (min-width: $media-desktop) {
-    padding: 40px 67px 60px 50px;
+    padding: 42px 63px 60px 54px;
   }
 }
 

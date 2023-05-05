@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $media-desktop) {
-    padding-bottom: 70px;
+    padding-bottom: 73px;
     border: none;
   }
 }
@@ -79,8 +79,13 @@
     position: relative;
     align-items: flex-start;
     flex-direction: column;
+    margin-bottom: 0;
     padding-top: 40px;
     padding-bottom: 57px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -107,12 +112,18 @@
   @media (min-width: $media-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 130px;
-    row-gap: 77px;
+    column-gap: 67px;
+    row-gap: 43px;
   }
 
   @media (min-width: $media-desktop) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
+  }
+}
+
+.work__description {
+  @media (min-width: $media-tablet) {
+    max-width: 220px;
   }
 }
