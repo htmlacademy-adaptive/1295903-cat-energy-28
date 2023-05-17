@@ -1,8 +1,8 @@
 .map {
-  background: #ffffff;
+  background-color: #ffffff;
 
   &--inner {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
   }
 }
 
@@ -23,13 +23,25 @@
   position: relative;
 }
 
-.map__frame {
-  display: block;
-  width: 100%;
+.map__frame-wrapper {
   height: 362px;
-  border: none;
+  background-image: url("../img/map.jpg");
+  background-position: left 70% center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.jpg");
+  }
 
   @media (min-width: $media-tablet) {
     height: 400px;
+    background-position: center;
   }
+}
+
+.map__frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
