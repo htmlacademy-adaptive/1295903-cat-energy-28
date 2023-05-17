@@ -84,6 +84,10 @@
     display: block;
   }
 
+  &:hover + .control__mark {
+    border-color: #bababa;
+  }
+
   &:focus + .control__mark {
     border-color: #444444;
     outline: 1px solid #444444;
