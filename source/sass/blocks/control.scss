@@ -4,6 +4,7 @@
   align-items: center;
   min-height: 30px;
   padding-left: 45px;
+  cursor: pointer;
 
   @media (min-width: $media-tablet) {
     min-height: 40px;
@@ -11,6 +12,7 @@
   }
 
   &--disabled {
+    cursor: default;
     opacity: 0.3;
   }
 }
@@ -80,5 +82,10 @@
   &:checked + .control__mark .control__check,
   &:checked + .control__mark--radio::after {
     display: block;
+  }
+
+  &:focus + .control__mark {
+    border-color: #444444;
+    outline: 1px solid #444444;
   }
 }
